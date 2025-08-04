@@ -49,6 +49,8 @@ jobs:
         node: [ 22 ]  # 部署阶段只需一个 Node 版本即可
     runs-on: ubuntu-latest
     name: Build and Deploy to GitHub Pages
+    environment:
+      name: github-pages
     steps:
       - name: Setup Node.js
         uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
